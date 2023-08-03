@@ -4,13 +4,11 @@ body {
     margin: 0;
     padding: 0;
   }
-  
-  header {
+header {
     background-color: #fa0d90;
     padding: 10px;
     text-align: center;
   }
-  
   main {
    
     display: flex;
@@ -19,7 +17,6 @@ body {
     margin: 0 auto;
     padding: 20px;
   }
-  
   footer {
     background-color: #e78b8b;
     padding: 10px;
@@ -30,15 +27,7 @@ body {
     padding:25px;
   }
 
-  input[type=text], select {
-    width: 70%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  input[type=Email], select {
+input[type=text], select {
     width: 70%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -55,7 +44,7 @@ body {
     box-sizing: border-box;
   }
   input[type=submit] {
-    width: 50%;
+    width: 30%;
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
@@ -64,12 +53,6 @@ body {
     border-radius: 4px;
     cursor: pointer;
   }
-  .size {
-    width: 150px;
-    height: 50px;
-    margin: 10px;
-  }
-
   button{
     width: 15%;
     background-color: #4CAF50;
@@ -80,4 +63,9 @@ body {
     border-radius: 4px;
     cursor: pointer;
     
+  }
+  .size {
+    width: 150px;
+    height: 50px;
+    margin: 10px;
   }
