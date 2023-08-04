@@ -53,15 +53,16 @@ input[type=text], select {
     border-radius: 4px;
     cursor: pointer;
   }
-  button{
-    width: 15%;
+  .signup{
+    width: 8%;
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin: -55px 0;
     border: none;
     border-radius: 4px;
-    cursor: pointer;
+    text-decoration: none;
+    float: right;
     
   }
   .size {
