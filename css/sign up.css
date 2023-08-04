@@ -69,10 +69,14 @@ body {
     height: 50px;
     margin: 10px;
   }
-
   .login{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  button{
     float:right;
-    width: 10%;
+    width: 8%;
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
@@ -80,5 +84,4 @@ body {
     border: none;
     border-radius: 8px;
     text-decoration: none;
-    
   }
