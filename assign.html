@@ -1,10 +1,59 @@
 <!DOCTYPE html>
-<html>
- <head>
-<script src="./script/assign.js"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Names Viewer</title>
+    <style>
+        /* Add some basic styling for better presentation */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #name-display {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        button {
+            font-size: 16px;
+            padding: 10px 20px;
+            margin: 5px;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Indian Names Viewer</h1>
+    <div id="name-display">Loading...</div>
+    <button id="previous-btn">Previous</button>
+    <button id="next-btn">Next</button>
 
+    <script>
+        // JavaScript code for name navigation
+        const names = ["Aarav", "Sanya", "Vikram", "Neha", "Rohan", "Priya", "Amit", "Meera", "Rajiv", "Ananya"];
+        let currentIndex = 0; // Initialize the index to display the first name
+
+        // Function to display the current name
+        function displayCurrentName() {
+            const nameDisplay = document.getElementById("name-display");
+            nameDisplay.textContent = names[currentIndex];
+        }
+
+        // Event listener for the Next button
+        document.getElementById("next-btn").addEventListener("click", () => {
+            currentIndex = (currentIndex + 1)
+            console.log(currentIndex)
+           // console.log((currentIndex + 1) % names.length)
+            displayCurrentName();
+        });
+
+        // Event listener for the Previous button
+        document.getElementById("previous-btn").addEventListener("click", () => {
+            currentIndex = (currentIndex - 1 + names.length) % names.length;
+            displayCurrentName();
+        });
+
+        // Initial display
+        displayCurrentName();
+    </script>
 </body>
 </html>

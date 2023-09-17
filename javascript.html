@@ -7,9 +7,10 @@
 <p id="demo1"></p>
 <p id="demo2"></p>
 <p>The concat() method merges  arrays:</p>
-<p id="1"></p>
-<p id="2"></p>
-<p id="3"></p>
+<p id="s1"></p>
+<p id="s2"></p>
+<p id="s3"></p>
+<p id="s4"></p>
 <script>
 const fruits = ["apple", "banana", "orange"];
 var shiftedelement = fruits.shift();
@@ -26,19 +27,23 @@ document.getElementById("demo2").innerHTML = fruits
 const myGirls = ["Cecilie", "Lone"];
 const myBoys = ["Emil", "Tobias", "Linus"];
 const myChildren = myGirls.concat(myBoys);
-document.getElementById("1").innerHTML = myChildren;
+document.getElementById("s1").innerHTML = myChildren;
 
 const numbers1 = [45, 4, 9, 16, 25];
 const numbers2 = numbers1.map(myFunction);
 
-document.getElementById("2").innerHTML = numbers2;
+document.getElementById("s2").innerHTML = numbers2;
 
 function myFunction(value) {
   return value * 2;
 }
 
 const d = new Date();
-document.getElementById("3").innerHTML = d;
+document.getElementById("s3").innerHTML = d;
+
+const text = '[ "Ford", "BMW", "Audi", "Fiat" ]';
+const myArr = JSON.parse(text);
+document.getElementById("s4").innerHTML = myArr[0];
 
 </script>
 
