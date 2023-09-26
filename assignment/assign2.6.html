@@ -7,6 +7,7 @@
 </head>
 <body>
     <h1>operator</h1>
+    <p id="santhosh"></p>
     
 
 <script>
@@ -27,14 +28,14 @@ function calculator(num1, operator, num2) {
       return "Invalid operator";
   }
 }
+document.getElementById("santhosh").innerHTML=(calculator(5, '+', 3))
 
-
-console.log(calculator(5, '+', 3));  // Output: 8
-console.log(calculator(10, '-', 4)); // Output: 6
-console.log(calculator(6, '*', 2));  // Output: 12
-console.log(calculator(8, '/', 2));  // Output: 4
-console.log(calculator(5, '%', 3));  // Output: Invalid operator
-console.log(calculator(5, '/', 0));  // Output: Division by zero is not allowed
+ console.log(calculator(5, '+', 3));  // Output: 8
+ console.log(calculator(10, '-', 4)); // Output: 6
+ console.log(calculator(6, '*', 2));  // Output: 12
+ console.log(calculator(8, '/', 2));  // Output: 4
+ console.log(calculator(5, '%', 3));  // Output: Invalid operator
+ console.log(calculator(0, '/', 10));  // Output: Division by zero is not allowed
 
 
  </script>
