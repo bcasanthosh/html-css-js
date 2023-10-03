@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>operator</h1>
+    <p id="santhosh"></p>
+    
+
+<script>
+function calculator(num1, operator, num2) {
+    var Output
+    if(operator==="+"){
+        Output=num1+num2;
+      return Output;
+    }
+    else if(operator==="-"){
+        Output=num1-num2;
+      return Output;  
+    }
+    else if(operator==="*"){
+        Output=num1*num2;
+      return Output;
+    }
+    else if(operator==="/"){
+      if (num2 === 0) {
+        Output=num1+num2;
+      return Output;
+      }
+    }
+    else if(operator==="%"){
+        Output=num1+num2;
+      return Output;
+    }
+    else {
+      return "Invalid operator";
+  }
+}
+
+
+ console.log(calculator(5, '+', 3));  // Output: 8
+ console.log(calculator(10, '-', 4)); // Output: 6
+ console.log(calculator(6, '*', 2));  // Output: 12
+ console.log(calculator(8, '/', 2));  // Output: 4
+ console.log(calculator(5, '%', 3));  // Output: Invalid operator
+ console.log(calculator(0, '/', 10));  // Output: Division by zero is not allowed
+
+
+ </script>
+</body>
+</html>
